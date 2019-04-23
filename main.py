@@ -1,8 +1,8 @@
 
 '''
-victims_ip:192.168.43.212
-kali_ip:192.168.43.36
-gateway:192.168.43.1
+victims_ip:xxx.xxx.xxx.xxx
+kali_ip:xxx.xxx.xxx.xxx
+gateway:xxx.xxx.xxx.xxx
 '''
 import os
 import sys
